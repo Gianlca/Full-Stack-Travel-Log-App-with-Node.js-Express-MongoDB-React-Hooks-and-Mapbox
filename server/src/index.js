@@ -16,6 +16,8 @@ mongoose.connect(process.env.DATABASE_URL, {
 
 const app = express();
 
+app.enable('trust proxy');
+
 app.use(morgan('common'));
 app.use(helmet());
 app.use(cors({

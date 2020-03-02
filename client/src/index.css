@@ -6,7 +6,55 @@ body {
   height: 100vh;
   width: 100vw;
 }
-
+h3, p {
+  margin: 0 0 1rem 0;
+}
 .popup {
-  max-width: 300px
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+
+form.entry-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  font-size: 0.9rem;
+}
+
+form.entry-form * {
+  margin: .1rem;
+}
+
+img {
+  max-width: 140px;
+}
+
+.mapboxgl-popup {
+  z-index: 9;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7em 1.7em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:#FFFFFF;
+  background-color:#3369ff;
+  box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+  text-align:center;
+  position:relative;
+  }
+
+.button:active {
+  box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+}
+.error {
+  color: red;
 }
